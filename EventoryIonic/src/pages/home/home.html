@@ -1,17 +1,26 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding> 
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100 padding style="text-align:center;color:rgba(87, 203, 181, 1)">
+        <img style="width:50%;max-width:300px;margin-bottom:12px" src="../../assets/eventory-logo.png"/>
+        <h1>EVENTORY</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <form style="width:100%;margin-bottom:16px;">
+          <ion-item style="padding:0px;margin-bottom:5px;">
+            <ion-input style="padding-left:8px;" type="text" name="username" placeholder="Username"></ion-input>
+          </ion-item>
+          <ion-item style="padding:0px;margin-bottom:5px;">
+            <ion-input style="padding-left:8px;" type="password" name="password" placeholder="Password"></ion-input>
+          </ion-item>
+          <button style="width:100%;height:45px;margin-bottom:5px;font-size:18px;">Login</button>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+      </form>
+    </ion-row>
+    <ion-row>
+      <button style="width:100%;height:45px;margin-bottom:5px;font-size:18px;">Facebook  <ion-icon name="logo-facebook"></ion-icon></button>
+      <button style="width:100%;height:45px;margin-bottom:5px;font-size:18px;">Google  <ion-icon name="logo-google"></ion-icon></button>
+    </ion-row>
+  </ion-grid>
 </ion-content>
