@@ -7,13 +7,10 @@
 <ion-header>
 </ion-header>
 
+  <!--script src="feeds.js"></script-->
 
-<ion-content padding>
-<script src="../../../bower_components/ionic-ion-horizontal-scroll-cards/ionic.hscrollcards.js"></script>
-  
-  <ion-list>
-    <ion-item>
-      <div class="editorsPick">
+<ion-content id="feed-content">
+      <!--div class="editorsPick">
         Tes editorsPick
         <span class="editorsPickSeeMore"><button ion-button color="dark" clear>See More</button></span>
         <ion-scroll direction="x" scroll-outside="true">
@@ -81,7 +78,89 @@
             </div>
           </ion-card>
         </div>
-      </div>
-    </ion-item>
-  </ion-list>
+      </div-->
+      <!--div ng-app="starter" class="slide-left-right-ios7">
+
+        <ion-pane ng-controller="ExampleCtrl">
+
+
+          <ion-header-bar class="bar-positive">
+            <h1 class="title">Horizontal Scroll Cards Demo</h1>
+          </ion-header-bar>
+
+          <hscroller>
+            <hcard ng-repeat="item in items" index="{{$index}}" desc="{{item.desc}}" image="{{item.image}}"></hcard>
+          </hscroller>
+
+        </ion-pane>
+
+      </div-->
+    <ion-grid class="feed-wrapper">
+          <div scrollX="true" class="feed-board">
+              <ion-row class="feed-columns">
+                  <!--CONTENT START-->
+                  <ion-col class="feed-column">
+                      <div class="feed-content-box">
+                        <div class="feed-content-header">
+                          <div class="title-box">
+                            <div class="title-icon">
+                              icon
+                            </div>
+                            <div class="title-text">
+                              <h6>SI TAMPAN</h6>
+                              <p>EVENT ORGANIZER</p>
+                            </div>
+                          </div>
+                          <div class="like-btn">
+                          </div>
+                        </div>
+                        <div class="feed-content-main">
+                          <h5>NGODING BERSAMA SAMBIL JOGET ASYIK</h5>
+                          <p>Mon, 24 April 2017, 21:42 PM</p>
+                          <p>Kosan Mz Riyan</p>
+                        </div>
+                        <div class="feed-content-footer">
+                          <div class="categories">
+                            <span class="category-text">BUSINESS</span>
+                            <span class="category-text">ENTREPRENEURSHIP</span>
+                            <span class="category-text">LOCAL</span>
+                          </div>
+                          <div class="view-count">
+                            1.000 views
+                          </div>
+                        </div>
+
+                      </div>
+                  </ion-col>
+                  <!--CONTENT END-->
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col> 
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col> 
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col> 
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col>  
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col> 
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col> 
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col> 
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col> 
+                  <ion-col class="feed-column">
+                      Item 1 
+                  </ion-col> 
+              </ion-row>
+          </div>
+    </ion-grid>
 </ion-content>

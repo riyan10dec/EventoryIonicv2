@@ -6,3 +6,121 @@ page-feeds {
         text-align: right;
     }
 }
+
+body, html {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto; }
+
+div.hscroller {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); 
+}
+
+.feed-wrapper{
+    height:18em;
+}
+
+.feed-board {
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+}
+.feed-columns {
+  height: 100%;
+  width: 800%;
+  white-space: nowrap;
+}
+
+.feed-column {
+  background: url(http://asulug.org/wp-content/uploads/2013/10/code-fu-competition.png) no-repeat center fixed; 
+  background-size: auto;
+  vertical-align: top;
+  height: 97.222%;
+  display: inline-block;
+  width: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin:0.25em;
+}
+
+#feed-content .scroll-content{
+    padding:0px !important;
+}
+
+.feed-content-box{
+    height:100%;
+    width:100%;
+}
+
+.feed-content-header{
+    display:inline-block;
+    height:3em;
+    width:100%;
+    background-color:#777777;
+    .title-box, .like-btn{
+        float: left;
+        height:100%;
+    }
+    .title-box{
+        width:80%;
+        background-color: #DDDDDD;
+        .title-icon, .title-text{
+            float: left;
+            height:100%;
+            width:3em;
+        }
+        .title-icon{
+            text-align: center;
+        }
+        .title-text{
+            text-align: left;
+            h6{
+                font-style: normal;
+                font-weight: normal;
+                margin:0.3em 0em 0em 0em !important;
+            }
+            p{
+                font-size: 0.7em;
+                margin-top:0em !important;
+            }
+        }
+    }
+    .like-btn{
+        width:20%;
+        background-color: #BBBBBB;
+    }
+}
+
+.feed-content-main{
+    p{
+        white-space: normal;
+        margin-left:0.5em;
+    }
+    h5{
+        white-space: normal;
+        margin:1em 0em 0em 0.4em !important;
+    }
+}
+
+.feed-content-footer{
+    bottom:0em;
+    display:inline-block;
+    height:3em;
+    width:100%;
+    background-color:#777777;
+    .categories, .view-count{
+        float: left;
+        height:100%;
+    }
+    .categories{
+        width:60%;
+        background-color: #DDDDDD;
+    }
+    .view-count{
+        width:40%;
+        background-color: #BBBBBB;
+    }
+
+}
