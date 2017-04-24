@@ -29,7 +29,7 @@ import { FeaturedPage } from '../pages/featured/featured';
     FeaturedPage
   ],
   imports: [
-    IonicModule.forRoot(Eventory)
+    IonicModule.forRoot(Eventory,{tabsPlacement : 'top'})
   ],
   bootstrap: [IonicApp],
   entryComponents: [

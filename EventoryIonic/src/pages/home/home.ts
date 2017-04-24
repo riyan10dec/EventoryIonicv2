@@ -16,8 +16,9 @@ export class HomePage {
   userService: UserService;
   config: Config;
   constructor(public navCtrl: NavController, userService: UserService) {
+    this.config = new Config();
     this.userService = userService;
-    this.userService.setApi("");
+    this.userService.setApi(this.config.getApiURL());
   }
   public Login(userid: string, password: string) {
     this.navCtrl.setRoot(DashboardPage);
