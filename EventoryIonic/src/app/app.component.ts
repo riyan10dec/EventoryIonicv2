@@ -1,22 +1,33 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import { Platform,Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
-import { TabsPage } from '../pages/tabs/tabs';
+import { HomePage } from '../pages/home/home';
+import { InterestPage } from '../pages/interest/interest'
+import { VoucherPage } from '../pages/voucher/voucher'
+import { HowToRedeemPage } from '../pages/how-to-redeem/how-to-redeem'
 
 
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
-  rootPage = TabsPage;
+export class Eventory {
+  @ViewChild(Nav) nav: Nav;
+  rootPage = HomePage;
+  pages: Array<{title: string, component: any}>
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
       Splashscreen.hide();
     });
+    this.pages = [
+      { title: 'Interest', component: InterestPage },
+      { title: 'Voucher', component: VoucherPage },
+      { title: 'How To Redeem', component: HowToRedeemPage },
+      { title: 'Logout', component: HomePage },
+    ];
+  }
+  openPage(page) {
+    this.nav.push(page.component);
   }
 }

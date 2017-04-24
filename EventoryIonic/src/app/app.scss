@@ -14,3 +14,27 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.profilepicture {
+     height: 20vw; 
+     width: 20vw; 
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px gray;
+    display: inline-block;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    margin-right: auto;
+} 
+.sidebar{
+    padding: 50%;
+}
+.decription{
+    position: relative;
+}
+.detail{
+        position: absolute;
+        bottom: 5vw;
+        left: 5vw;
+}
+    
