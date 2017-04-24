@@ -17,15 +17,14 @@ import { Config } from '../../app-config'
 export class FeedsPage {
   eventService: EventService;
   config: Config;
-
+  editorsPicks: any;
   constructor(public navCtrl: NavController, public navParams: NavParams, eventService : EventService) {
     this.config = new Config();
     this.eventService = eventService;
     this.eventService.setApi(this.config.getApiURL());
     var $obs = this.eventService.getFeeds("editorsPick").then(
       data => {
-        console.log(data);
-          var x = data;
+        this.editorsPicks = data;
       }
     );
   }

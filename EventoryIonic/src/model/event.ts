@@ -1,0 +1,19 @@
+interface Event{
+    title: string;
+    description: string;
+    longitude: Float32Array;
+    latitude: Float32Array;
+    seen: number;
+    shared: number;
+    loved: number;
+    createdDate: Date;
+    createdBy: string;
+    eventDate: Date;
+    imagePath: string;
+    seat: number;
+    barcode: string;
+    eventPlace: string;
+    editorsPickId: string;
+    subcategories: Array<Subcategory>;
+    joinedUser: Array<User>;
+}
